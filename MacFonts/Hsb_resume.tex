@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% One Page Two Column Resume
+% LaTeX Template
+% Version 2.0 (23/05/2015)
+%
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{Hsb_resume}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\rfoot{Page \thepage \hspace{1pt}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Shibo}{Hou}{ \urlstyle{same}\ {Address: 1230 University Court  Apt 304, NC, 27606 }\\
+ {Mobile: (919) 917-4889} | {E-mail: shou3@ncsu.edu}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{North Carolina State}
+\subsection{University (NCSU)}
+\descript{Department of Electrical and Computer Engineering}
+\descript{M.S. in Computer Engineering}
+\location{May 2015 | Raleigh, NC}
+\sectionsep
+
+\subsection{Beijing University of}
+\subsection{Posts \& Telecom (BUPT)}
+\descript{M.S. in Communication \& Information System}
+\location{Mar 2013 | Beijing, China}
+\descript{B.S. in Communication Engineering}
+\location{Jun 2010 | Beijing, China}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-4pt}
+\section{Links} 
+Facebook: {\bf https://facebook/shibo.hou} \\
+Github: {\bf Expo0911} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-4pt}
+\section{Coursework}
+\subsection{Graduate}
+Software Engineering \\
+Database Management Systems\\
+Algorithms\\
+Internet Protocols \\
+Computer Networks\\
+Computer Performance Modeling\\
+Network Systems and Services \\
+Human Computer Interaction \\
+Wireless Communication Systems \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-4pt}
+\section{Skills}
+\subsection{Programming}
+Java \textbullet{}  C \textbullet{} C++ \textbullet{} Javascript \\
+MySQL  \textbullet{} CSS \textbullet{} HTML \textbullet{} PHP  \\
+Matlab \textbullet{} Assembler \textbullet{} \LaTeX\ \\ 
+\vspace{8pt}
+\subsection{Operating System}
+Mac OS\textbullet{}  Windows \textbullet{} Linux \\
+\vspace{8pt}
+\subsection{Mathematics}
+Mathematical Modeling  \textbullet{} Calculus  \\
+Probabilities  \textbullet{} Stochastic Process\\
+Statistics \textbullet{} Matrix Theory \\
+\vspace{8pt}
+\subsection{Algorithms}
+Excellent with data structure and common algorithms
+\vspace{8pt}
+\subsection{Networking}
+TCP/IP \textbullet{} Wireless Networking
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      PROJECT     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Project Experience}
+\runsubsection{Database Management System}
+\location{Spring 2015| NCSU}
+%\vspace{\topsep}
+%\begin{tightemize}
+%\item Designed a database to assist with the administration of the University Housing Office. Students can view available houses based on different criteria, check status of lease related requests, invoices, maintenance tickets and parking. Housing staff can view and act on different requests. 
+%\item Designed database using E-R model, created database by Oracle MySQL, managed database on Java by JDBC, built a website for Housing Office and students to operate.
+%\end{tightemize}
+\textbullet{ } Designed a database to assist with the administration of University Housing Office. Students can view available houses based on different criteria, check status of lease related requests, invoices, maintenance tickets and parking. Housing staff can view and act on different requests. \\
+\textbullet{ } Designed database using E-R model, created database by Oracle MySQL, managed database on Java by JDBC, built a website for Housing Office and students to operate.
+\sectionsep
+
+\runsubsection{Software engineering}
+\location{Fall 2014| NCSU}
+%\begin{tightemize}
+\textbullet{ } Designed a simple website using node.js, applying bootstrap to create layout and knockout.js to process dynamic content, adding visualization component by d3.js, using grunt to manage build tasks. \\
+\textbullet{ } Performed unit testing on mocking the server response from Twitter.
+%\end{tightemize}
+\sectionsep
+
+\runsubsection{Computer Performance Modeling}
+\location{Spring 2014| NCSU}
+%\begin{tightemize}
+\textbullet{ }  Applied Markov process queueing-based models to simulate the general M/G/1 queueing problem in computer \& communication systems by C++. Computed performance measures of throughput and delay for given queueing system with different number of servers and different queueing priorities.
+%\end{tightemize}
+\sectionsep
+
+\runsubsection{Internet Protocols}
+\location{Fall 2013| NCSU}
+%\begin{tightemize}
+\textbullet{ }  Implemented go-back-N and selective repeat automatic repeat request (ARQ) scheme to a simple Peer to Peer system with a centralized index, in which a concurrent server is capable of carrying out communication with multiple clients. When peers join in this P2P system, they can add their local file names to file list in the server, and query, request to download files from some destination peers over TCP.
+%\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      WORK   Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-4pt}
+\section{Work Experience}
+\runsubsection{Capgemini Consulting}\\
+\descript{Business \& Technology Solution (BTS) Team}
+\location{{\bf  Associate Consultant} | Dec 2012 – Aug 2013 | Shanghai, China}
+\textbullet{ } As a management consultant, assisted BTS Department win the \$1,000,000 bid from China Vanke Co., Ltd to reconstruct its database management system. \\
+\textbullet{ } As a technical consultant, helped China Vanke Co., Ltd locate the vulnerabilities of its database system, update its master database and management platform using SAP NetWeaver Java.\\
+\sectionsep
+
+\runsubsection{Potevio Institute of Technology Co., Ltd.}\\
+\descript{Joint Coding Modulation Diversity Project}
+\location{{\bf Internship} | Dec 2010 – Jul 2011 | Beijing, China}
+\textbullet{ } Built and debugged link level simulation system and several paramount modules  (such as channel estimation, turbo coding) by C Language \\
+\textbullet{ } Proposed a new fast LMMSE channel estimation algorithm (using Matrix theory) under Rayleigh fading channel, verified its eminent performance.\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-4pt}
+\section{Awards} 
+\begin{tabular}{rll}
+Sep 2011   &  "Outstanding Student Leaders" Award of BUPT \\
+May 2010  &  The Mathematical Contest in Modeling, Meritorious Winner\\
+Jul 2009    &  "Freescale Cup" National Intelligent Car Competition, 3rd Prize\\
+Apr 2009   &  The Mathematical Contest in Modeling, Meritorious Winner\\
+Dec 2007  &  Beijing Mathematics Competition for University Students, Bronze Medal\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
