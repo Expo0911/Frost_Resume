@@ -15,13 +15,7 @@ Common LaTeX resume-builders such as [**moderncv**](http://www.latextemplates.co
 
 This template attempts to **not look horrible**, allow **detail**, be a **single page**, and allow useful **LaTeX templating**.
 
-## Preview
 
-### OpenFonts
-![alt tag](https://raw.githubusercontent.com/deedydas/Deedy-Resume/master/OpenFonts/sample-image.png)
-
-### MacFonts
-![alt tag](https://raw.githubusercontent.com/deedydas/Deedy-Resume/master/MacFonts/sample-image.png)
 
 ## Dependencies
 
@@ -34,27 +28,6 @@ This template attempts to **not look horrible**, allow **detail**, be a **single
 2. OpenFonts version - [as a direct download](https://github.com/deedydas/Deedy-Resume/raw/master/OpenFonts/deedy_resume-openfont.pdf)
 3. **Overleaf**.com (formerly **WriteLatex**.com) (v1 fonts/colors changed) - [compilable online](https://www.writelatex.com/templates/deedy-resume/sqdbztjjghvz#.U2H9Kq1dV18)
 4. **ShareLatex**.com (v1 fonts changes) - [compilable online](https://www.sharelatex.com/templates/cv-or-resume/deedy-resume)
-
-## Changelog
-### v1.2
- 1. Added publications in place of societies.
- 2. Collapsed a portion of education.
- 3. Fixed a bug with alignment of overflowing long last updated dates on the top right. 
-
-### v1.1
- 1. Fixed several compilation bugs with \renewcommand
- 2. Got Open-source fonts (Windows/Linux support)
- 3. Added Last Updated
- 4. Move Title styling into .sty
- 5. Commented .sty file.
-
-## TODO
-1. Merge OpenFont and MacFonts as a single sty with options.
-2. Figure out a smoother way for the document to flow onto the next page.
-3. Add styling information for a "Projects/Hacks" section.
-4. Add location/address information
-5. Fix the hacky 'References' omission outside the .cls file in the MacFonts version.
-6. Add various styling and section options and allow for multiple pages smoothly.
 
 ## Known Issues:
 1. Overflows onto second page if any column's contents are more than the vertical limit
