@@ -1,4 +1,4 @@
-Deedy-Resume
+Frost-Resume
 =========================
 
 A **one page** , **two asymmetric column** resume template in **XeTeX** that caters particularly to an **undergraduate Computer Science** student.
@@ -62,7 +62,7 @@ This template attempts to **not look horrible**, allow **detail**, be a **single
 3. Hacky redefinition of \refname to omit 'References' text for publications in the MacFonts version.
 
 ## License
-    Copyright 2014 Debarghya Das
+    Copyright 2015 Frost Hou
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
